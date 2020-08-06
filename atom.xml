@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://codenie.github.io</id>
-    <title>Gridea</title>
-    <updated>2020-08-06T10:40:14.506Z</updated>
+    <title>codenie</title>
+    <updated>2020-08-06T10:48:16.456Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://codenie.github.io"/>
     <link rel="self" href="https://codenie.github.io/atom.xml"/>
     <subtitle>温故而知新</subtitle>
     <logo>https://codenie.github.io/images/avatar.png</logo>
     <icon>https://codenie.github.io/favicon.ico</icon>
-    <rights>All rights reserved 2020, Gridea</rights>
+    <rights>All rights reserved 2020, codenie</rights>
     <entry>
         <title type="html"><![CDATA[Hello Gridea]]></title>
         <id>https://codenie.github.io/post/hello-gridea/</id>
