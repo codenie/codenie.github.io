@@ -9,7 +9,7 @@
 <meta name="description" content="温故而知新">
 <meta name="theme-color" content="#000">
 <title>codenie</title>
-<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/codenie/codenie.github.io@master/favicon.ico?v=1598270539478">
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/codenie/codenie.github.io@master/favicon.ico?v=1598270709414">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/codenie/codenie.github.io@master/media/css/pisces.css">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/codenie/codenie.github.io@master/media/fonts/font-awesome.css">
 <link
@@ -1046,7 +1046,8 @@
       
       <div class="item">
         <a class="result-title" style="opacity: 0;" href="https://codenie.github.io/post/kswapd0-wa-kuang-bing-du-cha-sha-guo-cheng/"" data-c="
-          &lt;p&gt;最近实验室服务器负载异常，刚重启过后CPU占用就快速上升至接近100%，htop显示一个用户下的kswapd0进程疯狂占用cpu，google后有人说是linux虚拟内存的问题，但是系统刚开机，128G内存基本空闲，并且cpu疯狂被占用，这种说法明显有问题，继续排查后，我发现这个程序和一个名叫WachtdogsMiner的挖矿蠕虫和两个荷兰IP有关。&lt;/p&gt;
+          &lt;h2 id=&#34;查杀过程&#34;&gt;查杀过程&lt;/h2&gt;
+&lt;p&gt;最近实验室服务器负载异常，刚重启过后CPU占用就快速上升至接近100%，htop显示一个用户下的kswapd0进程疯狂占用cpu，google后有人说是linux虚拟内存的问题，但是系统刚开机，128G内存基本空闲，并且cpu疯狂被占用，这种说法明显有问题，继续排查后，我发现这个程序和一个名叫WachtdogsMiner的挖矿蠕虫和两个荷兰IP有关。&lt;/p&gt;
 &lt;!-- more --&gt;
 &lt;p&gt;&lt;img src=&#34;https://codenie.github.io/post-images/1598267819154.jpg&#34; alt=&#34;kswapd0进程&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
 使用&lt;code&gt;netstat -antlp&lt;/code&gt;查看系统外部链接，可以发现两个荷兰的ip，一些博主还发现这些ip与rsync（一个数据传输工具）有关，可以确定这是用来植入病毒程序的工具。&lt;br&gt;

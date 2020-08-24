@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://codenie.github.io</id>
     <title>codenie</title>
-    <updated>2020-08-24T12:02:21.712Z</updated>
+    <updated>2020-08-24T12:08:04.136Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://codenie.github.io"/>
     <link rel="self" href="https://codenie.github.io/atom.xml"/>
@@ -16,9 +16,11 @@
         <link href="https://codenie.github.io/post/kswapd0-wa-kuang-bing-du-cha-sha-guo-cheng/">
         </link>
         <updated>2020-08-24T11:02:19.000Z</updated>
-        <summary type="html"><![CDATA[<p>最近实验室服务器负载异常，刚重启过后CPU占用就快速上升至接近100%，htop显示一个用户下的kswapd0进程疯狂占用cpu，google后有人说是linux虚拟内存的问题，但是系统刚开机，128G内存基本空闲，并且cpu疯狂被占用，这种说法明显有问题，继续排查后，我发现这个程序和一个名叫WachtdogsMiner的挖矿蠕虫和两个荷兰IP有关。</p>
+        <summary type="html"><![CDATA[<h2 id="查杀过程">查杀过程</h2>
+<p>最近实验室服务器负载异常，刚重启过后CPU占用就快速上升至接近100%，htop显示一个用户下的kswapd0进程疯狂占用cpu，google后有人说是linux虚拟内存的问题，但是系统刚开机，128G内存基本空闲，并且cpu疯狂被占用，这种说法明显有问题，继续排查后，我发现这个程序和一个名叫WachtdogsMiner的挖矿蠕虫和两个荷兰IP有关。</p>
 ]]></summary>
-        <content type="html"><![CDATA[<p>最近实验室服务器负载异常，刚重启过后CPU占用就快速上升至接近100%，htop显示一个用户下的kswapd0进程疯狂占用cpu，google后有人说是linux虚拟内存的问题，但是系统刚开机，128G内存基本空闲，并且cpu疯狂被占用，这种说法明显有问题，继续排查后，我发现这个程序和一个名叫WachtdogsMiner的挖矿蠕虫和两个荷兰IP有关。</p>
+        <content type="html"><![CDATA[<h2 id="查杀过程">查杀过程</h2>
+<p>最近实验室服务器负载异常，刚重启过后CPU占用就快速上升至接近100%，htop显示一个用户下的kswapd0进程疯狂占用cpu，google后有人说是linux虚拟内存的问题，但是系统刚开机，128G内存基本空闲，并且cpu疯狂被占用，这种说法明显有问题，继续排查后，我发现这个程序和一个名叫WachtdogsMiner的挖矿蠕虫和两个荷兰IP有关。</p>
 <!-- more -->
 <p><img src="https://codenie.github.io/post-images/1598267819154.jpg" alt="kswapd0进程" loading="lazy"><br>
 使用<code>netstat -antlp</code>查看系统外部链接，可以发现两个荷兰的ip，一些博主还发现这些ip与rsync（一个数据传输工具）有关，可以确定这是用来植入病毒程序的工具。<br>
