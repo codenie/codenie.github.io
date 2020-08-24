@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://codenie.github.io</id>
     <title>codenie</title>
-    <updated>2020-08-06T11:35:17.637Z</updated>
+    <updated>2020-08-24T12:01:43.446Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://codenie.github.io"/>
     <link rel="self" href="https://codenie.github.io/atom.xml"/>
@@ -10,6 +10,60 @@
     <logo>https://codenie.github.io/images/avatar.png</logo>
     <icon>https://codenie.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, codenie</rights>
+    <entry>
+        <title type="html"><![CDATA[kswapd0挖矿病毒查杀过程]]></title>
+        <id>https://codenie.github.io/post/kswapd0-wa-kuang-bing-du-cha-sha-guo-cheng/</id>
+        <link href="https://codenie.github.io/post/kswapd0-wa-kuang-bing-du-cha-sha-guo-cheng/">
+        </link>
+        <updated>2020-08-24T11:02:19.000Z</updated>
+        <summary type="html"><![CDATA[<p>最近实验室服务器负载异常，刚重启过后CPU占用就快速上升至接近100%，htop显示一个用户下的kswapd0进程疯狂占用cpu，google后有人说是linux虚拟内存的问题，但是系统刚开机，128G内存基本空闲，并且cpu疯狂被占用，这种说法明显有问题，继续排查后，我发现这个程序和一个名叫WachtdogsMiner的挖矿蠕虫和两个荷兰IP有关。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>最近实验室服务器负载异常，刚重启过后CPU占用就快速上升至接近100%，htop显示一个用户下的kswapd0进程疯狂占用cpu，google后有人说是linux虚拟内存的问题，但是系统刚开机，128G内存基本空闲，并且cpu疯狂被占用，这种说法明显有问题，继续排查后，我发现这个程序和一个名叫WachtdogsMiner的挖矿蠕虫和两个荷兰IP有关。</p>
+<!-- more -->
+<p><img src="https://codenie.github.io/post-images/1598267819154.jpg" alt="kswapd0进程" loading="lazy"><br>
+使用<code>netstat -antlp</code>查看系统外部链接，可以发现两个荷兰的ip，一些博主还发现这些ip与rsync（一个数据传输工具）有关，可以确定这是用来植入病毒程序的工具。<br>
+<img src="https://codenie.github.io/post-images/1598268281922.PNG" alt="" loading="lazy"><br>
+通过查看病毒进程2149的行为，可以发现该进程与被黑的用户下的一个隐藏文件夹有关，具体位置为<code>.configrc/a/kswapd0</code><br>
+<img src="https://codenie.github.io/post-images/1598268420725.PNG" alt="" loading="lazy"><br>
+进一步查看病毒程序的文件目录，其中的<code>kswapd0</code>就是主体，另外还包含了创建计划任务，开始/结束等sh脚本：<br>
+<img src="https://codenie.github.io/post-images/1598268552087.PNG" alt="" loading="lazy"></p>
+<h2 id="现有解决方案">现有解决方案：</h2>
+<ol>
+<li>杀掉病毒进程，直接kill掉即可</li>
+<li>删除可疑文件，这次分析中病毒将自己隐藏在用户文件夹中的<code>.configrc</code>中，直接删除即可</li>
+<li>另外一些博主发现在<code>/tmp</code>目录中有可能也会存在一些异常的程序，比如名叫<code>test</code>的程序</li>
+<li><strong>删除病毒创建的计划任务</strong> 可以使用<code>crontab -l -u user_name</code>查看某个用户的计划任务，如果发现可以任务可以通过<code>crontab -e -u user_name</code>删除。以下是该病毒创建的计划任务示例：</li>
+</ol>
+<pre><code>1 1 */2 * * /home/yijun/.configrc/a/upd&gt;/dev/null 2&gt;&amp;1
+@reboot /home/yijun/.configrc/a/upd&gt;/dev/null 2&gt;&amp;1
+5 8 * * 0 /home/yijun/.configrc/b/sync&gt;/dev/null 2&gt;&amp;1
+@reboot /home/yijun/.configrc/b/sync&gt;/dev/null 2&gt;&amp;1  
+0 0 */3 * * /tmp/.X25-unix/.rsync/c/aptitude&gt;/dev/null 2&gt;&amp;1
+</code></pre>
+<ol start="5">
+<li>如果账号无人使用的话，删除该账号更稳妥</li>
+<li>不妨碍服务器运行的前提下，可以屏蔽传播此病毒的ip段。</li>
+</ol>
+<h2 id="病毒传播及运行机制">病毒传播及运行机制</h2>
+<p>据大神分析，该病毒为WachtdogsMiner挖矿蠕虫病毒的一个变种，该病毒会伪装成dota2游戏组件等程序，通过ssh爆破传播到服务器中，病毒会隐藏在用户目录下的隐藏文件夹中，伪装成kswapd0进程利用cpu挖门罗币。<br>
+<img src="http://5b0988e595225.cdn.sohucs.com/images/20190608/45c287eb4da041c29142fa2282bedf85.jpeg" alt="图源自博主 黑客与极客" loading="lazy"><br>
+有趣的是病毒程序文件夹中有个名叫<code>init0</code>的脚本，其注释写着</p>
+<blockquote>
+<p>A script for killing cryptocurrecncy miners in a Linux enviornment</p>
+</blockquote>
+<p>用途是<strong>清除掉linux服务器中其他的挖矿程序等恶意程序</strong>，方便自己占用更多的cpu资源😹</p>
+<h2 id="写在最后">写在最后</h2>
+<ul>
+<li>没事多巡查下服务器，看看是否存在异常负载的行为，加固下密码还是挺有必要的；</li>
+<li>这些挖矿病毒也是可气，高校的研究用服务器也要黑，恶心到家了</li>
+</ul>
+<p>有一点我没弄明白，病毒脚本中有个名叫<code>a</code>的bash脚本会检测系统cpu类型，进而采取不同的行为；病毒为什么不检测gpu呢？放着服务器上的显卡不用而去占用cpu负载，效率低还容易被发现</p>
+<h2 id="其他资料">其他资料</h2>
+<p>https://www.freebuf.com/news/204687.html<br>
+https://blog.csdn.net/TR946/article/details/106995806<br>
+https://blog.csdn.net/jzz601264258/article/details/105850816</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Hello Gridea]]></title>
         <id>https://codenie.github.io/post/hello-gridea/</id>
@@ -25,6 +79,7 @@
 <p><a href="https://github.com/getgridea/gridea">Github</a><br>
 <a href="https://gridea.dev/">Gridea 主页</a><br>
 <a href="http://fehey.com/">示例网站</a></p>
+<!-- more -->
 <h2 id="特性">特性👇</h2>
 <p>📝  你可以使用最酷的 <strong>Markdown</strong> 语法，进行快速创作</p>
 <p>🌉  你可以给文章配上精美的封面图和在文章任意位置插入图片</p>
