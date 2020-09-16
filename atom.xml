@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://codenie.github.io</id>
     <title>codenie</title>
-    <updated>2020-08-24T12:08:04.136Z</updated>
+    <updated>2020-09-16T07:26:51.088Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://codenie.github.io"/>
     <link rel="self" href="https://codenie.github.io/atom.xml"/>
@@ -10,6 +10,51 @@
     <logo>https://codenie.github.io/images/avatar.png</logo>
     <icon>https://codenie.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, codenie</rights>
+    <entry>
+        <title type="html"><![CDATA[微软hololens2 emulator安装过程]]></title>
+        <id>https://codenie.github.io/post/wei-ruan-hololens2-emulator-an-zhuang-guo-cheng/</id>
+        <link href="https://codenie.github.io/post/wei-ruan-hololens2-emulator-an-zhuang-guo-cheng/">
+        </link>
+        <updated>2020-09-16T06:25:42.000Z</updated>
+        <content type="html"><![CDATA[<p>📌本教程适用于微软开发的基于hyper-v的模拟器系列，比如windows phone 模拟器，hololens2模拟器。<br>
+📌如果有小伙伴按照官网教程核对了硬件与系统配置，并且已经在bios和windows中开启了hyper-v的支持，重启了N遍后但仍然遇到了如下的错误，请直接转到 <code>1.打开hyper-v</code>。<br>
+Unable to start the emulator.  The emulator is unable to start because the hypervisor is not running.  The likely cause is that hardware-assisted virtualization is not enabled.</p>
+<h1 id="0-查看软硬件配置">0. 查看软硬件配置</h1>
+<h2 id="硬件配置">硬件配置</h2>
+<p>直接对照官网给出的硬件参数即可。hololens2模拟器的硬件要求如下：<br>
+https://docs.microsoft.com/zh-cn/windows/mixed-reality/using-the-hololens-emulator</p>
+<h2 id="系统配置">系统配置</h2>
+<ul>
+<li>windows<strong>不能为家庭版</strong></li>
+<li>DirectX与WDDM的版本足够高（一般都能满足，具体版本可以使用<code>dxdiag</code>命令查看）</li>
+</ul>
+<h1 id="1-打开-hyper-v">1. 打开 hyper-v</h1>
+<h2 id="bios设置打开hyper-v">BIOS设置打开hyper-v</h2>
+<p>重启计算机进入bios后，在configuration中开启intel cpu对虚拟化的支持，主要是<code>Intel Virtual Technology</code>这一项设置为Enable，即下图中被选中的那一项。<br>
+<img src="https://codenie.github.io/post-images/1600239121728.jpg" alt="" loading="lazy"></p>
+<p>其他设置一般无需更改，具体bios设置信息可以参考微软官方文档：<br>
+https://docs.microsoft.com/en-us/previous-versions/windows/apps/jj863509(v=vs.105)?redirectedfrom=MSDN</p>
+<h2 id="打开windows对hyper-v的支持">打开windows对hyper-v的支持</h2>
+<p>在<code>控制面板&gt;程序与功能-&gt;启用或关闭windows功能</code>中注意打开hyper-v下<strong>所有的选项</strong>，如果有的选项是灰色（状态无法更改），建议检查bios设置。<br>
+<img src="https://codenie.github.io/post-images/1600239858739.JPG" alt="" loading="lazy"><br>
+📌这里有一个大坑，<strong>如果只打开hyper-v，部分计算机可能会报文章开头给的错误</strong>。以hololens2模拟器为例，将其安装文件夹中的<code>.vhdx</code>虚拟机磁盘文件导入hyper-v管理器中，运行会报错：<code>虚拟机监控程序未运行</code><br>
+📌为了避免可能出现的问题，建议大家根据下图的标注，将框中的几个选项也全部打开，并使用管理员运行cmd，执行<code>bcdedit /set hypervisorlaunchtype Auto</code>，确保虚拟机监控程序启动，<strong>并重启计算机</strong>。<br>
+<img src="https://codenie.github.io/post-images/1600240062834.png" alt="" loading="lazy"></p>
+<h1 id="2enjoy">2.Enjoy!</h1>
+<h1 id="3-我还有问题">3. 我还有问题😡</h1>
+<p>如果模拟器仍然无法正常启动，可以尝试如下设置：</p>
+<ol>
+<li>关闭windows功能中对hyper-v的支持，重启电脑，再打开相关windows功能，再次重启电脑。（重启大法好！）</li>
+<li>尝试将模拟器的<code>.vhdx</code>文件直接导入hyper-v 管理器或者virtualbox等虚拟机程序，启动后的报错相比直接启动模拟器程序会更加详细。
+<ol>
+<li>win10系统直接搜索<code>hyper-v 管理器</code>即可打开</li>
+<li>新建虚拟机，在创建虚拟磁盘时导入模拟器的<code>.vhdx</code>文件即可。</li>
+<li>以hololens2模拟器为例，其虚拟磁盘位置为<code>C:\Program Files (x86)\Windows Kits\10\Emulation\HoloLens\模拟器版本号\xxx.vhdx</code></li>
+</ol>
+</li>
+</ol>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[kswapd0挖矿病毒查杀过程]]></title>
         <id>https://codenie.github.io/post/kswapd0-wa-kuang-bing-du-cha-sha-guo-cheng/</id>
