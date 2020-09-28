@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://codenie.github.io</id>
     <title>codenie</title>
-    <updated>2020-09-16T07:31:41.588Z</updated>
+    <updated>2020-09-28T14:03:53.849Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://codenie.github.io"/>
     <link rel="self" href="https://codenie.github.io/atom.xml"/>
@@ -10,6 +10,47 @@
     <logo>https://codenie.github.io/images/avatar.png</logo>
     <icon>https://codenie.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, codenie</rights>
+    <entry>
+        <title type="html"><![CDATA[Linux Mint 20 安装 ROS教程]]></title>
+        <id>https://codenie.github.io/post/linux-mint-20-an-zhuang-ros-jiao-cheng/</id>
+        <link href="https://codenie.github.io/post/linux-mint-20-an-zhuang-ros-jiao-cheng/">
+        </link>
+        <updated>2020-09-28T12:11:30.000Z</updated>
+        <content type="html"><![CDATA[<h2 id="官网教程">官网教程</h2>
+<p>ROS1 官网安装教程：http://wiki.ros.org/noetic/Installation<br>
+ROS1的二进制包支持Ubuntu和Debian，我使用的时Linux Mint，基于ubuntu，所以选择了Ubuntu系统(http://wiki.ros.org/noetic/Installation/Ubuntu)</p>
+<h2 id="软件源设置">软件源设置</h2>
+<p><img src="https://codenie.github.io/post-images/1601295862346.png" alt="" loading="lazy"><br>
+建议选择速度较快的软件源，注意打开源代码等选项。</p>
+<h2 id="设置apt仓库">设置apt仓库</h2>
+<p>这一步按照官网说明操作即可，建议使用镜像，ros默认的那个仓库速度较慢；USTC和tuna选其一就可以了<br>
+📌 <strong>关键来了！ 如果你用的不是标准的Ubuntu系统，比如Ubuntu的衍生系统Linux Mint，那么按照官网给的命令，执行后添加的ros仓库是有问题的。</strong><br>
+在你后续执行<code>sudo apt update</code>时会发现添加的ros仓库缺少 Release文件，后续<code>apt install</code>时无法找到ros包。</p>
+<h3 id="问题原因">📌问题原因：</h3>
+<p>以添加清华源ros仓库为例，官网给的命令为</p>
+<pre><code>sudo sh -c '. /etc/lsb-release &amp;&amp; echo &quot;deb http://mirrors.ustc.edu.cn/ros/ubuntu/ `lsb_release -cs` main&quot; &gt; /etc/apt/sources.list.d/ros-latest.list'
+</code></pre>
+<p>这个命令主要的动作是向<code>/etc/apt/sources.list.d/ros-latest.list</code> 文件中写入tuna的ros仓库信息，让<code>apt</code>知道能够去tuna仓库中下载ros包；其中的<code>lsb_release -cs</code> 会获取系统的code。<br>
+linux mint20.04的code是<strong>Ulyana</strong>，但是其PACKAGE BASE却是<strong>Ubuntu Focal</strong>，也就是说<code>lsb_release -cs</code> 应该是<code>focal</code>，但是由于mint不是标准的Ubuntu系统，所以被识别为<code>ulyana</code>，导致后续无法找到<code>ulyana</code>对应的ubuntu使用的ros包。</p>
+<h3 id="解决方案">📌解决方案：</h3>
+<ol>
+<li>在执行命令时直接将相关位置替换为ubuntu的code：</li>
+</ol>
+<pre><code>sudo sh -c '. /etc/lsb-release &amp;&amp; echo &quot;deb http://mirrors.ustc.edu.cn/ros/ubuntu/  focal main&quot; &gt; /etc/apt/sources.list.d/ros-latest.list'
+</code></pre>
+<ol start="2">
+<li>或者在执行完命令后，手动修改<code>/etc/apt/sources.list.d/ros-latest.list</code>文件内的系统code信息，注意需要sudo权限。以下是修改好的文件示例：</li>
+</ol>
+<pre><code>deb http://mirrors.tuna.tsinghua.edu.cn/ros/ubuntu/ focal main
+</code></pre>
+<p>你可以从https://www.linuxmint.com/download_all.php 网站获取各个版本的mint对应的ubuntu系统code：<br>
+<img src="https://codenie.github.io/post-images/1601301141451.png" alt="" loading="lazy"></p>
+<h2 id="开心地安装ros吧">开心地安装ros吧</h2>
+<p>接下来就按照官网教程安装ros即可~<br>
+依次是 添加source.lsit -&gt; 添加keys -&gt; apt update -&gt; apt install。<br>
+上述步骤执行完后即完成了ros的基础环境的安装。</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[微软hololens2 emulator安装过程]]></title>
         <id>https://codenie.github.io/post/wei-ruan-hololens2-emulator-an-zhuang-guo-cheng/</id>
