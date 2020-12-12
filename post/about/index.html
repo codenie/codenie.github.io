@@ -24,7 +24,10 @@
   <!-- <script src="https://codenie.github.io/media/scripts/jquery.min.js"></script> -->
   <script>hljs.initHighlightingOnLoad();</script>
   <!-- valine -->
-  <script src='//unpkg.com/valine/dist/Valine.min.js'></script>
+  <!-- https://cdn.jsdelivr.net/gh/HCLonely/Valine@latest/dist/Valine.min.js -->
+  <!-- <script src='//unpkg.com/valine/dist/Valine.min.js'></script> -->
+  <script src='https://cdn.jsdelivr.net/gh/HCLonely/Valine@latest/dist/Valine.min.js'></script>
+  
   
 
     <meta property="og:description" content="关于"/>
@@ -113,7 +116,10 @@
             new Valine({
                 el: '#vcomments',
                 appId: 'Dhgmt5afe9joSJDT3JULbvUD-gzGzoHsz',
-                appKey: 'gyhEqWUOjyTyOldbF8GA84SG'
+                appKey: 'gyhEqWUOjyTyOldbF8GA84SG',
+                tagMeta: ["博主","小伙伴","访客"],
+                master:	["fb1072c9b05e13dd343fa496c04d0a59"],
+                friends: ["818b5597c79c7fe9f2973b5bd2666b3b"]
             })
         </script>
         <div class="comment">
