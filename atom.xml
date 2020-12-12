@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://codenie.github.io</id>
-    <title>codenie</title>
-    <updated>2020-12-12T03:13:41.296Z</updated>
+    <title>Codenie&apos;Blog</title>
+    <updated>2020-12-12T03:17:33.591Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://codenie.github.io"/>
     <link rel="self" href="https://codenie.github.io/atom.xml"/>
     <subtitle>stay foolish, stay hungry</subtitle>
     <logo>https://codenie.github.io/images/avatar.png</logo>
     <icon>https://codenie.github.io/favicon.ico</icon>
-    <rights>All rights reserved 2020, codenie</rights>
+    <rights>All rights reserved 2020, Codenie&apos;Blog</rights>
     <entry>
         <title type="html"><![CDATA[Linux Mint 20 安装 ROS教程]]></title>
         <id>https://codenie.github.io/post/linux-mint-20-an-zhuang-ros-jiao-cheng/</id>
