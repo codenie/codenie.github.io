@@ -2,11 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://codenie.github.io</id>
     <title>codenie</title>
-    <updated>2020-09-28T14:03:53.849Z</updated>
+    <updated>2020-12-12T03:13:41.296Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://codenie.github.io"/>
     <link rel="self" href="https://codenie.github.io/atom.xml"/>
-    <subtitle>温故而知新</subtitle>
+    <subtitle>stay foolish, stay hungry</subtitle>
     <logo>https://codenie.github.io/images/avatar.png</logo>
     <icon>https://codenie.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, codenie</rights>
@@ -16,40 +16,6 @@
         <link href="https://codenie.github.io/post/linux-mint-20-an-zhuang-ros-jiao-cheng/">
         </link>
         <updated>2020-09-28T12:11:30.000Z</updated>
-        <content type="html"><![CDATA[<h2 id="官网教程">官网教程</h2>
-<p>ROS1 官网安装教程：http://wiki.ros.org/noetic/Installation<br>
-ROS1的二进制包支持Ubuntu和Debian，我使用的时Linux Mint，基于ubuntu，所以选择了Ubuntu系统(http://wiki.ros.org/noetic/Installation/Ubuntu)</p>
-<h2 id="软件源设置">软件源设置</h2>
-<p><img src="https://codenie.github.io/post-images/1601295862346.png" alt="" loading="lazy"><br>
-建议选择速度较快的软件源，注意打开源代码等选项。</p>
-<h2 id="设置apt仓库">设置apt仓库</h2>
-<p>这一步按照官网说明操作即可，建议使用镜像，ros默认的那个仓库速度较慢；USTC和tuna选其一就可以了<br>
-📌 <strong>关键来了！ 如果你用的不是标准的Ubuntu系统，比如Ubuntu的衍生系统Linux Mint，那么按照官网给的命令，执行后添加的ros仓库是有问题的。</strong><br>
-在你后续执行<code>sudo apt update</code>时会发现添加的ros仓库缺少 Release文件，后续<code>apt install</code>时无法找到ros包。</p>
-<h3 id="问题原因">📌问题原因：</h3>
-<p>以添加清华源ros仓库为例，官网给的命令为</p>
-<pre><code>sudo sh -c '. /etc/lsb-release &amp;&amp; echo &quot;deb http://mirrors.ustc.edu.cn/ros/ubuntu/ `lsb_release -cs` main&quot; &gt; /etc/apt/sources.list.d/ros-latest.list'
-</code></pre>
-<p>这个命令主要的动作是向<code>/etc/apt/sources.list.d/ros-latest.list</code> 文件中写入tuna的ros仓库信息，让<code>apt</code>知道能够去tuna仓库中下载ros包；其中的<code>lsb_release -cs</code> 会获取系统的code。<br>
-linux mint20.04的code是<strong>Ulyana</strong>，但是其PACKAGE BASE却是<strong>Ubuntu Focal</strong>，也就是说<code>lsb_release -cs</code> 应该是<code>focal</code>，但是由于mint不是标准的Ubuntu系统，所以被识别为<code>ulyana</code>，导致后续无法找到<code>ulyana</code>对应的ubuntu使用的ros包。</p>
-<h3 id="解决方案">📌解决方案：</h3>
-<ol>
-<li>在执行命令时直接将相关位置替换为ubuntu的code：</li>
-</ol>
-<pre><code>sudo sh -c '. /etc/lsb-release &amp;&amp; echo &quot;deb http://mirrors.ustc.edu.cn/ros/ubuntu/  focal main&quot; &gt; /etc/apt/sources.list.d/ros-latest.list'
-</code></pre>
-<ol start="2">
-<li>或者在执行完命令后，手动修改<code>/etc/apt/sources.list.d/ros-latest.list</code>文件内的系统code信息，注意需要sudo权限。以下是修改好的文件示例：</li>
-</ol>
-<pre><code>deb http://mirrors.tuna.tsinghua.edu.cn/ros/ubuntu/ focal main
-</code></pre>
-<p>你可以从https://www.linuxmint.com/download_all.php 网站获取各个版本的mint对应的ubuntu系统code：<br>
-<img src="https://codenie.github.io/post-images/1601301141451.png" alt="" loading="lazy"></p>
-<h2 id="开心地安装ros吧">开心地安装ros吧</h2>
-<p>接下来就按照官网教程安装ros即可~<br>
-依次是 添加source.lsit -&gt; 添加keys -&gt; apt update -&gt; apt install。<br>
-上述步骤执行完后即完成了ros的基础环境的安装。</p>
-]]></content>
     </entry>
     <entry>
         <title type="html"><![CDATA[微软hololens2 emulator安装过程]]></title>
@@ -64,41 +30,6 @@ Unable to start the emulator.  The emulator is unable to start because the hyper
         <content type="html"><![CDATA[<p>📌本教程适用于微软开发的基于hyper-v的模拟器系列，比如windows phone 模拟器，hololens2模拟器。<br>
 📌如果有小伙伴按照官网教程核对了硬件与系统配置，并且已经在bios和windows中开启了hyper-v的支持，重启了N遍后但仍然遇到了如下的错误，请直接转到 <code>1.打开hyper-v</code>。<br>
 Unable to start the emulator.  The emulator is unable to start because the hypervisor is not running.  The likely cause is that hardware-assisted virtualization is not enabled.</p>
-<!-- more -->
-<h1 id="0-查看软硬件配置">0. 查看软硬件配置</h1>
-<h2 id="硬件配置">硬件配置</h2>
-<p>直接对照官网给出的硬件参数即可。hololens2模拟器的硬件要求如下：<br>
-https://docs.microsoft.com/zh-cn/windows/mixed-reality/using-the-hololens-emulator</p>
-<h2 id="系统配置">系统配置</h2>
-<ul>
-<li>windows<strong>不能为家庭版</strong></li>
-<li>DirectX与WDDM的版本足够高（一般都能满足，具体版本可以使用<code>dxdiag</code>命令查看）</li>
-</ul>
-<h1 id="1-打开-hyper-v">1. 打开 hyper-v</h1>
-<h2 id="bios设置打开hyper-v">BIOS设置打开hyper-v</h2>
-<p>重启计算机进入bios后，在configuration中开启intel cpu对虚拟化的支持，主要是<code>Intel Virtual Technology</code>这一项设置为Enable，即下图中被选中的那一项。<br>
-<img src="https://codenie.github.io/post-images/1600239121728.jpg" alt="" loading="lazy"></p>
-<p>其他设置一般无需更改，具体bios设置信息可以参考微软官方文档：<br>
-https://docs.microsoft.com/en-us/previous-versions/windows/apps/jj863509(v=vs.105)?redirectedfrom=MSDN</p>
-<h2 id="打开windows对hyper-v的支持">打开windows对hyper-v的支持</h2>
-<p>在<code>控制面板&gt;程序与功能-&gt;启用或关闭windows功能</code>中注意打开hyper-v下<strong>所有的选项</strong>，如果有的选项是灰色（状态无法更改），建议检查bios设置。<br>
-<img src="https://codenie.github.io/post-images/1600239858739.JPG" alt="" loading="lazy"><br>
-📌这里有一个大坑，<strong>如果只打开hyper-v，部分计算机可能会报文章开头给的错误</strong>。以hololens2模拟器为例，将其安装文件夹中的<code>.vhdx</code>虚拟机磁盘文件导入hyper-v管理器中，运行会报错：<code>虚拟机监控程序未运行</code><br>
-📌为了避免可能出现的问题，建议大家根据下图的标注，将框中的几个选项也全部打开，并使用管理员运行cmd，执行<code>bcdedit /set hypervisorlaunchtype Auto</code>，确保虚拟机监控程序启动，<strong>并重启计算机</strong>。<br>
-<img src="https://codenie.github.io/post-images/1600240062834.png" alt="" loading="lazy"></p>
-<h1 id="2enjoy">2.Enjoy!</h1>
-<h1 id="3-我还有问题">3. 我还有问题😡</h1>
-<p>如果模拟器仍然无法正常启动，可以尝试如下设置：</p>
-<ol>
-<li>关闭windows功能中对hyper-v的支持，重启电脑，再打开相关windows功能，再次重启电脑。（重启大法好！）</li>
-<li>尝试将模拟器的<code>.vhdx</code>文件直接导入hyper-v 管理器或者virtualbox等虚拟机程序，启动后的报错相比直接启动模拟器程序会更加详细。
-<ol>
-<li>win10系统直接搜索<code>hyper-v 管理器</code>即可打开</li>
-<li>新建虚拟机，在创建虚拟磁盘时导入模拟器的<code>.vhdx</code>文件即可。</li>
-<li>以hololens2模拟器为例，其虚拟磁盘位置为<code>C:\Program Files (x86)\Windows Kits\10\Emulation\HoloLens\模拟器版本号\xxx.vhdx</code></li>
-</ol>
-</li>
-</ol>
 ]]></content>
     </entry>
     <entry>
@@ -112,49 +43,6 @@ https://docs.microsoft.com/en-us/previous-versions/windows/apps/jj863509(v=vs.10
 ]]></summary>
         <content type="html"><![CDATA[<h2 id="查杀过程">查杀过程</h2>
 <p>最近实验室服务器负载异常，刚重启过后CPU占用就快速上升至接近100%，htop显示一个用户下的kswapd0进程疯狂占用cpu，google后有人说是linux虚拟内存的问题，但是系统刚开机，128G内存基本空闲，并且cpu疯狂被占用，这种说法明显有问题，继续排查后，我发现这个程序和一个名叫WachtdogsMiner的挖矿蠕虫和两个荷兰IP有关。</p>
-<!-- more -->
-<p><img src="https://codenie.github.io/post-images/1598267819154.jpg" alt="kswapd0进程" loading="lazy"><br>
-使用<code>netstat -antlp</code>查看系统外部链接，可以发现两个荷兰的ip，一些博主还发现这些ip与rsync（一个数据传输工具）有关，可以确定这是用来植入病毒程序的工具。<br>
-<img src="https://codenie.github.io/post-images/1598268281922.PNG" alt="" loading="lazy"><br>
-通过查看病毒进程2149的行为，可以发现该进程与被黑的用户下的一个隐藏文件夹有关，具体位置为<code>.configrc/a/kswapd0</code><br>
-<img src="https://codenie.github.io/post-images/1598268420725.PNG" alt="" loading="lazy"><br>
-进一步查看病毒程序的文件目录，其中的<code>kswapd0</code>就是主体，另外还包含了创建计划任务，开始/结束等sh脚本：<br>
-<img src="https://codenie.github.io/post-images/1598268552087.PNG" alt="" loading="lazy"></p>
-<h2 id="现有解决方案">现有解决方案：</h2>
-<ol>
-<li>杀掉病毒进程，直接kill掉即可</li>
-<li>删除可疑文件，这次分析中病毒将自己隐藏在用户文件夹中的<code>.configrc</code>中，直接删除即可</li>
-<li>另外一些博主发现在<code>/tmp</code>目录中有可能也会存在一些异常的程序，比如名叫<code>test</code>的程序</li>
-<li><strong>删除病毒创建的计划任务</strong> 可以使用<code>crontab -l -u user_name</code>查看某个用户的计划任务，如果发现可以任务可以通过<code>crontab -e -u user_name</code>删除。以下是该病毒创建的计划任务示例：</li>
-</ol>
-<pre><code>1 1 */2 * * /home/yijun/.configrc/a/upd&gt;/dev/null 2&gt;&amp;1
-@reboot /home/yijun/.configrc/a/upd&gt;/dev/null 2&gt;&amp;1
-5 8 * * 0 /home/yijun/.configrc/b/sync&gt;/dev/null 2&gt;&amp;1
-@reboot /home/yijun/.configrc/b/sync&gt;/dev/null 2&gt;&amp;1  
-0 0 */3 * * /tmp/.X25-unix/.rsync/c/aptitude&gt;/dev/null 2&gt;&amp;1
-</code></pre>
-<ol start="5">
-<li>如果账号无人使用的话，删除该账号更稳妥</li>
-<li>不妨碍服务器运行的前提下，可以屏蔽传播此病毒的ip段。</li>
-</ol>
-<h2 id="病毒传播及运行机制">病毒传播及运行机制</h2>
-<p>据大神分析，该病毒为WachtdogsMiner挖矿蠕虫病毒的一个变种，该病毒会伪装成dota2游戏组件等程序，通过ssh爆破传播到服务器中，病毒会隐藏在用户目录下的隐藏文件夹中，伪装成kswapd0进程利用cpu挖门罗币。<br>
-<img src="http://5b0988e595225.cdn.sohucs.com/images/20190608/45c287eb4da041c29142fa2282bedf85.jpeg" alt="图源自博主 黑客与极客" loading="lazy"><br>
-有趣的是病毒程序文件夹中有个名叫<code>init0</code>的脚本，其注释写着</p>
-<blockquote>
-<p>A script for killing cryptocurrecncy miners in a Linux enviornment</p>
-</blockquote>
-<p>用途是<strong>清除掉linux服务器中其他的挖矿程序等恶意程序</strong>，方便自己占用更多的cpu资源😹</p>
-<h2 id="写在最后">写在最后</h2>
-<ul>
-<li>没事多巡查下服务器，看看是否存在异常负载的行为，加固下密码还是挺有必要的；</li>
-<li>这些挖矿病毒也是可气，高校的研究用服务器也要黑，恶心到家了</li>
-</ul>
-<p>有一点我没弄明白，病毒脚本中有个名叫<code>a</code>的bash脚本会检测系统cpu类型，进而采取不同的行为；病毒为什么不检测gpu呢？放着服务器上的显卡不用而去占用cpu负载，效率低还容易被发现</p>
-<h2 id="其他资料">其他资料</h2>
-<p>https://www.freebuf.com/news/204687.html<br>
-https://blog.csdn.net/TR946/article/details/106995806<br>
-https://blog.csdn.net/jzz601264258/article/details/105850816</p>
 ]]></content>
     </entry>
     <entry>
@@ -168,26 +56,6 @@ https://blog.csdn.net/jzz601264258/article/details/105850816</p>
 ]]></summary>
         <content type="html"><![CDATA[<p>👏  欢迎使用 <strong>Gridea</strong> ！<br>
 ✍️  <strong>Gridea</strong> 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ...</p>
-<!-- more -->
-<p><a href="https://github.com/getgridea/gridea">Github</a><br>
-<a href="https://gridea.dev/">Gridea 主页</a><br>
-<a href="http://fehey.com/">示例网站</a></p>
-<!-- more -->
-<h2 id="特性">特性👇</h2>
-<p>📝  你可以使用最酷的 <strong>Markdown</strong> 语法，进行快速创作</p>
-<p>🌉  你可以给文章配上精美的封面图和在文章任意位置插入图片</p>
-<p>🏷️  你可以对文章进行标签分组</p>
-<p>📋  你可以自定义菜单，甚至可以创建外部链接菜单</p>
-<p>💻  你可以在 <strong>Windows</strong>，<strong>MacOS</strong> 或 <strong>Linux</strong> 设备上使用此客户端</p>
-<p>🌎  你可以使用 <strong>𝖦𝗂𝗍𝗁𝗎𝖻 𝖯𝖺𝗀𝖾𝗌</strong> 或 <strong>Coding Pages</strong> 向世界展示，未来将支持更多平台</p>
-<p>💬  你可以进行简单的配置，接入 <a href="https://github.com/gitalk/gitalk">Gitalk</a> 或 <a href="https://github.com/SukkaW/DisqusJS">DisqusJS</a> 评论系统</p>
-<p>🇬🇧  你可以使用<strong>中文简体</strong>或<strong>英语</strong></p>
-<p>🌁  你可以任意使用应用内默认主题或任意第三方主题，强大的主题自定义能力</p>
-<p>🖥  你可以自定义源文件夹，利用 OneDrive、百度网盘、iCloud、Dropbox 等进行多设备同步</p>
-<p>🌱 当然 <strong>Gridea</strong> 还很年轻，有很多不足，但请相信，它会不停向前 🏃</p>
-<p>未来，它一定会成为你离不开的伙伴</p>
-<p>尽情发挥你的才华吧！</p>
-<p>😘 Enjoy~</p>
 ]]></content>
     </entry>
 </feed>
