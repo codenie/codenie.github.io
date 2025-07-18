@@ -7,7 +7,7 @@
 
 # Site Settings
 title                    : "Mainpage of Buqing Nie"
-description              : "The mainpage of Buqing Nie."
+description              : 
 repository               : "codenie/codenie.github.io"
 google_scholar_stats_use_cdn : true
 
@@ -23,7 +23,7 @@ baidu_site_verification  :  # get baidu_site_verification from https://ziyuan.ba
 author:
   name             : "Buqing Nie"
   avatar           : "images/photo_rec.jpg"
-  bio              : "Lorem ipsum College"
+  bio              : "PhD candidate@SJTU"
   location         : "Shanghai, China"
   employer         : 
   pubmed           : 
