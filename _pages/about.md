@@ -38,15 +38,19 @@ I am a final year CS PhD student, expected to graduate in March 2026. Currently,
 
 [Select before Act: Spatially Decoupled Action Repetition for Continuous Control](https://arxiv.org/abs/2502.06919)
 
-**Buqing Nie**, Yangqing Fu, Yue Gao, 
-
-[Arxiv](https://arxiv.org/abs/2502.06919)  [Openreview](https://openreview.net/forum?id=PDgZ3rvqHn)
-- flexible action repetition framework for continuous control 
-- higher sample efficiency with superior performance and reduced action fluctuation
+**Buqing Nie**, Yangqing Fu, Yue Gao. [Arxiv](https://arxiv.org/abs/2502.06919)  [Openreview](https://openreview.net/forum?id=PDgZ3rvqHn)
+- a flexible action repetition framework for continuous control.
+- higher efficiency, superior performance, reduced fluctuation.
+- first work to consider spatial features into temporal abstraction.
 </div>
 </div>
 
-- [Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet](https://github.com), A, B, C, **CVPR 2020**
+
+Improve robustness of reinforcement learning against observation perturbations via $l_\infty$ lipschitz policy networks
+
+**Buqing Nie**, Jingtian Ji, Yangqing Fu, Yue Gao.  AAAI Conference on Artificial Intelligence (AAAI) 2024.
+
+<div class="badge">ICLR 2025</div> [Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet](https://github.com), A, B, C, **CVPR 2020**
 
 # 📖 Educations
 - *2022.04 - 2026.03*, PhD Candidate (combined master and doctoral program), Computer Science, Department of Computer Science, Shanghai Jiao Tong University.
