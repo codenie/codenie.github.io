@@ -18,7 +18,7 @@ redirect_from:
 <span class='anchor' id='about-me'></span>
 
 I am a PhD student major in Computer Science at Shanghai Jiao Tong University (SJTU), supervised by Prof. [Yue Gao](https://gaoyue.sjtu.edu.cn/).
-Currently, I am conducting researches on Embodied AI at Shanghai Innovation Institute and [MoE key lab of Artificial Intelligence](https://ailab-moe.sjtu.edu.cn/).
+Currently, I am conducting researches on Embodied AI at [Shanghai Innovation Institute](https://www.sii.edu.cn/) and [MoE key lab of Artificial Intelligence](https://ailab-moe.sjtu.edu.cn/).
 Previously, I received my bachelor degree in Computer Science from IEEE honor class at SJTU. 
 
 My research interest includes:
@@ -26,6 +26,8 @@ My research interest includes:
 (1) **Reinforcement Learning (RL) algorithms:** Robust RL algorithms; Improve sample efficiency; Multi-task/Meta RL algorithms.
 
 (2) **Embodied Artificial Intelligence:** Vision-Language-Action (VLA)-based robto manipulation; RL-based locomotion and imitation on legged/humanoid robots; 
+
+I am a final year CS PhD student, expected to graduate in March 2026. Currently, I am looking for a job about Reinforcement Learning or Embodied AI
 
 # 📝 Publications 
 
