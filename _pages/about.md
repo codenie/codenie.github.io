@@ -72,9 +72,11 @@ Improve robustness of reinforcement learning against observation perturbations v
 [Action Robust Reinforcement Learning via Optimal Adversary Aware Policy Optimization](https://arxiv.org/abs/2507.03372), **Buqing Nie**, Yangqing Fu, Yue Gao.  [Arxiv](https://arxiv.org/abs/2507.03372)
 </div>
 
+<span class="badge">Arxiv</span> [Action Robust Reinforcement Learning via Optimal Adversary Aware Policy Optimization](https://arxiv.org/abs/2507.03372), **Buqing Nie**, Yangqing Fu, Yue Gao.  [Arxiv](https://arxiv.org/abs/2507.03372)
+
 - ``Arxiv`` [test](https://arxiv.org/abs/2106.09317), test, test.
 
-## 🧠 Robotics & Embodied Artificial Intelligence
+## 🤖 Robotics & Embodied Artificial Intelligence
 
 <!-- DanceHAT -->
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICRA 2022</div><img src='images/dancehat.png' alt="sym" width="100%"></div></div>
