@@ -61,13 +61,26 @@ Improve robustness of reinforcement learning against observation perturbations v
 </div>
 </div> -->
 
-``Under Review`` [Action Robust Reinforcement Learning via Optimal Adversary Aware Policy Optimization](https://arxiv.org/abs/2507.03372), **Buqing Nie**, Yangqing Fu, Yue Gao.  [Arxiv](https://arxiv.org/abs/2507.03372)
-
+<!-- <div class='paper-box'><div class='paper-box-image'><div><div class="badge">Under Review</div></div></div>
+<div class='paper-box-text' markdown="1"> -->
+<div class="badge">Under Review</div>
+[Action Robust Reinforcement Learning via Optimal Adversary Aware Policy Optimization](https://arxiv.org/abs/2507.03372), **Buqing Nie**, Yangqing Fu, Yue Gao.  [Arxiv](https://arxiv.org/abs/2507.03372)
+<!-- </div>
+</div> -->
 
 
 
 ## 🧠 Robotics & Embodied Artificial Intelligence
 
+<!-- DanceHAT -->
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICRA 2022</div><img src='images/dancehat.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+DanceHAT: Generate Stable Dances for Humanoid Robots with Adversarial Training
+
+**Buqing Nie**, and Yue Gao.  [Paper](https://ieeexplore.ieee.org/document/9811649/)
+</div>
+</div>
 
 # 📖 Educations
 - *2022.04 - 2026.03*, PhD Candidate (combined master and doctoral program), Computer Science, Department of Computer Science, Shanghai Jiao Tong University.
