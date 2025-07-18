@@ -27,7 +27,7 @@ My research interest includes:
 
 (2) **Embodied Artificial Intelligence:** Vision-Language-Action (VLA)-based robto manipulation; RL-based locomotion and imitation on legged/humanoid robots; 
 
-I am a final year CS PhD student, expected to graduate in March 2026. Currently, I am looking for a job about Reinforcement Learning or Embodied AI
+I am a final year CS PhD student, expected to graduate in March 2026. Currently, I am looking for a job about Reinforcement Learning or Embodied AI.
 
 # 📝 Publications 
 
