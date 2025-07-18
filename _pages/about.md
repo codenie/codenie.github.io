@@ -61,12 +61,11 @@ Improve robustness of reinforcement learning against observation perturbations v
 </div>
 </div> -->
 
-<!-- <div class='paper-box'><div class='paper-box-image'><div><div class="badge">Under Review</div></div></div>
-<div class='paper-box-text' markdown="1"> -->
-<div class="badge">Under Review</div>
+<div class='paper-box'><div class="badge">Under Review</div>
+<div class='paper-box-text' markdown="1">
 [Action Robust Reinforcement Learning via Optimal Adversary Aware Policy Optimization](https://arxiv.org/abs/2507.03372), **Buqing Nie**, Yangqing Fu, Yue Gao.  [Arxiv](https://arxiv.org/abs/2507.03372)
-<!-- </div>
-</div> -->
+</div>
+</div>
 
 
 
