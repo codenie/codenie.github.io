@@ -25,7 +25,7 @@ author:
   avatar           : "images/android-chrome-512x512.png"
   bio              : "Lorem ipsum College"
   location         : "Shanghai, China"
-  employer         : Shanghai Jiao Tong University
+  employer         : 
   pubmed           : 
   googlescholar    : "https://scholar.google.com/citations?user=SqBTdgIAAAAJ"
   email            : "niebuqing@sjtu.edu.cn"
@@ -37,7 +37,7 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-  github           : "codenie" # e.g., "github username"
+  github           :  # e.g., "github username"
   google_plus      :
   keybase          :
   instagram        :
