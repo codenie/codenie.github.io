@@ -43,18 +43,14 @@ My research interest includes:
 
 - [Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet](https://github.com), A, B, C, **CVPR 2020**
 
-# 🎖 Honors and Awards
-- *2021.10* Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet.  
-
 # 📖 Educations
 - *2022.04 - 2026.03*, PhD Candidate (combined master and doctoral program), Computer Science, Department of Computer Science, Shanghai Jiao Tong University.
 - *2020.09 - 2022.04*, Master, Control Science and Engineering, Department of Automation, Shanghai Jiao Tong University.
 - *2016.06 - 2020.04*, Bachelor, Computer Science (IEEE honor class), Department of Computer Science, Shanghai Jiao Tong University.
 
 
-# 💬 Invited Talks
-- *2021.06*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
-- *2021.03*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet.  \| [videovideo](https://github.com/)
+# 🎖 Honors and Awards
+- *2021.10* Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet.  
 
-# 💻 Internships
-- *2019.05 - 2020.02*, [Lorem](https://github.com/), China.
+# 💻 Academic Services
+I serve as a reviewer for AI/robotics conferences/journals, including ICLR 2025, NeurIPS 2025, ICRA 2025, IROS 2025, RAL, etc.
