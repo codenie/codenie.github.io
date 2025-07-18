@@ -72,7 +72,9 @@ Improve robustness of reinforcement learning against observation perturbations v
 [Action Robust Reinforcement Learning via Optimal Adversary Aware Policy Optimization](https://arxiv.org/abs/2507.03372), **Buqing Nie**, Yangqing Fu, Yue Gao.  [Arxiv](https://arxiv.org/abs/2507.03372)
 </div>
 
-<span class="badge">Arxiv</span> [Action Robust Reinforcement Learning via Optimal Adversary Aware Policy Optimization](https://arxiv.org/abs/2507.03372), **Buqing Nie**, Yangqing Fu, Yue Gao.  [Arxiv](https://arxiv.org/abs/2507.03372)
+<span class="badge">Arxiv</span> <a href="https://arxiv.org/abs/2507.03372">
+      Action Robust Reinforcement Learning via Optimal Adversary Aware Policy Optimization
+    </a> [Action Robust Reinforcement Learning via Optimal Adversary Aware Policy Optimization](https://arxiv.org/abs/2507.03372), **Buqing Nie**, Yangqing Fu, Yue Gao.  [Arxiv](https://arxiv.org/abs/2507.03372)
 
 - ``Arxiv`` [test](https://arxiv.org/abs/2106.09317), test, test.
 
