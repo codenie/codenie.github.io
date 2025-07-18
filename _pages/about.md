@@ -45,12 +45,15 @@ I am a final year CS PhD student, expected to graduate in March 2026. Currently,
 </div>
 </div>
 
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">AAAI 2024</div><img src='images/sortRL.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
 
 Improve robustness of reinforcement learning against observation perturbations via $l_\infty$ lipschitz policy networks
 
-**Buqing Nie**, Jingtian Ji, Yangqing Fu, Yue Gao.  AAAI Conference on Artificial Intelligence (AAAI) 2024.
+**Buqing Nie**, Jingtian Ji, Yangqing Fu, Yue Gao. [Arxiv](https://arxiv.org/abs/2312.08751)
 
-<div class="badge">ICLR 2025</div> [Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet](https://github.com), A, B, C, **CVPR 2020**
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Arxiv</div></div></div>
+<div class='paper-box-text' markdown="1"> Action Robust Reinforcement Learning via Optimal Adversary Aware Policy Optimization. **Buqing Nie**, Yangqing Fu, Yue Gao.  [Arxiv](https://arxiv.org/abs/2507.03372)
 
 # 📖 Educations
 - *2022.04 - 2026.03*, PhD Candidate (combined master and doctoral program), Computer Science, Department of Computer Science, Shanghai Jiao Tong University.
