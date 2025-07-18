@@ -31,15 +31,18 @@ I am a final year CS PhD student, expected to graduate in March 2026. Currently,
 
 # 📝 Publications 
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICLR 2025</div><img src='images/SDAR1.jpg' alt="sym" width="100%"></div></div>
+## 🧠 Reinforcement Learning Algorithms
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICLR 2025</div><img src='images/SDAR2.jpg' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-[Deep Residual Learning for Image Recognition](https://openaccess.thecvf.com/content_cvpr_2016/papers/He_Deep_Residual_Learning_CVPR_2016_paper.pdf)
+[Select before Act: Spatially Decoupled Action Repetition for Continuous Control](https://arxiv.org/abs/2502.06919)
 
-**Kaiming He**, Xiangyu Zhang, Shaoqing Ren, Jian Sun
+**Buqing Nie**, Yangqing Fu, Yue Gao, 
 
-[**Project**](https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DhtAFkwAAAAJ&citation_for_view=DhtAFkwAAAAJ:ALROH1vI_8AC) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
-- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
+[Arxiv](https://arxiv.org/abs/2502.06919)  [Openreview](https://openreview.net/forum?id=PDgZ3rvqHn)
+- flexible action repetition framework for continuous control 
+- higher sample efficiency with superior performance and reduced action fluctuation
 </div>
 </div>
 
