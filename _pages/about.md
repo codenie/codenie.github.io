@@ -61,13 +61,18 @@ Improve robustness of reinforcement learning against observation perturbations v
 </div>
 </div> -->
 
-<div class='paper-box'><div class="badge">Under Review</div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Arxiv</div></div></div>
 <div class='paper-box-text' markdown="1">
 [Action Robust Reinforcement Learning via Optimal Adversary Aware Policy Optimization](https://arxiv.org/abs/2507.03372), **Buqing Nie**, Yangqing Fu, Yue Gao.  [Arxiv](https://arxiv.org/abs/2507.03372)
 </div>
 </div>
 
+<div class='paper-box-image'><div><div class="badge">Arxiv</div></div></div>
+<div class='paper-box-text' markdown="1">
+[Action Robust Reinforcement Learning via Optimal Adversary Aware Policy Optimization](https://arxiv.org/abs/2507.03372), **Buqing Nie**, Yangqing Fu, Yue Gao.  [Arxiv](https://arxiv.org/abs/2507.03372)
+</div>
 
+- ``Arxiv`` [test](https://arxiv.org/abs/2106.09317), test, test.
 
 ## 🧠 Robotics & Embodied Artificial Intelligence
 
@@ -80,6 +85,8 @@ DanceHAT: Generate Stable Dances for Humanoid Robots with Adversarial Training
 **Buqing Nie**, and Yue Gao.  [Paper](https://ieeexplore.ieee.org/document/9811649/)
 </div>
 </div>
+
+- Capability Iteration Network for Robot Path Planning, **Buqing Nie**, Yidong Mei, Yue Gao, Feng Gao.
 
 # 📖 Educations
 - *2022.04 - 2026.03*, PhD Candidate (combined master and doctoral program), Computer Science, Department of Computer Science, Shanghai Jiao Tong University.
