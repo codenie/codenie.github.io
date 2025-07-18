@@ -34,7 +34,7 @@ I am a final year CS PhD student, expected to graduate in March 2026. Currently,
 ## 🧠 Reinforcement Learning Algorithms
 
 <!-- SDAR -->
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICLR 2025</div><img src='images/SDAR2.jpg' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICLR 2025</div><img src='images/SDAR3.jpg' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [Select before Act: Spatially Decoupled Action Repetition for Continuous Control](https://arxiv.org/abs/2502.06919)
