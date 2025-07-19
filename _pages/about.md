@@ -56,22 +56,27 @@ Improve robustness of reinforcement learning against observation perturbations v
 </div>
 </div>
 
-<!-- <div class='paper-box'><div class='paper-box-image'><div><div class="badge">Arxiv</div></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Arxiv</div></div></div>
 <div class='paper-box-text' markdown="1"> Action Robust Reinforcement Learning via Optimal Adversary Aware Policy Optimization. **Buqing Nie**, Yangqing Fu, Yue Gao.  [Arxiv](https://arxiv.org/abs/2507.03372)
 </div>
-</div> -->
+</div>
 
-<code class="language-plaintext highlighter-rouge">Arxiv</code> [Action Robust Reinforcement Learning via Optimal Adversary Aware Policy Optimization](https://arxiv.org/abs/2507.03372), **Buqing Nie**, Yangqing Fu, Yue Gao.  [Arxiv](https://arxiv.org/abs/2507.03372)
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Arxiv</div></div></div>
+<!-- OA-RL -->
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">AAAI 2024</div><img src='images/sortRL.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
-[Action Robust Reinforcement Learning via Optimal Adversary Aware Policy Optimization](https://arxiv.org/abs/2507.03372), **Buqing Nie**, Yangqing Fu, Yue Gao.  [Arxiv](https://arxiv.org/abs/2507.03372)
+
+[Action Robust Reinforcement Learning via Optimal Adversary Aware Policy Optimization](https://arxiv.org/abs/2507.03372)
+
+**Buqing Nie**, Yangqing Fu, Yue Gao.  [Arxiv](https://arxiv.org/abs/2507.03372)
 </div>
 </div>
 
 <div class='paper-box-image'><div><div class="badge">Arxiv</div></div></div>
 <div class='paper-box-text' markdown="1">
+
 [Action Robust Reinforcement Learning via Optimal Adversary Aware Policy Optimization](https://arxiv.org/abs/2507.03372), **Buqing Nie**, Yangqing Fu, Yue Gao.  [Arxiv](https://arxiv.org/abs/2507.03372)
+
 </div>
 
 <span class="badge">Arxiv</span> <a href="https://arxiv.org/abs/2507.03372">
