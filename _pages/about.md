@@ -31,7 +31,7 @@ I am a final year CS PhD student, expected to graduate in March 2026. Currently,
 
 # 📝 Publications 
 
-## 🧠 Reinforcement Learning Algorithms
+# 🧠 Reinforcement Learning Algorithms
 
 <!-- SDAR -->
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICLR 2025</div><img src='images/SDAR3.jpg' alt="sym" width="100%"></div></div>
@@ -73,11 +73,11 @@ Improve robustness of reinforcement learning against observation perturbations v
 </div>
 </div>
 
-- ``NeurIPS 2024`` Accelerating Monte Carlo Tree Search with Probability Tree State Abstraction, Yangqing Fu, Ming Sun, **Buqing Nie**, Yue Gao.
-- ``RAL 2023`` DAGA: Dynamics Aware Reinforcement Learning With Graph-Based Rapid Adaptation, Jingtian Ji, **Buqing Nie**, and Yue Gao.
-- ``Under Review`` General Tree State Abstraction for Efficient Monte Carlo Tree Search with Automatic Optimization, Yangqing Fu, Ming Sun, **Buqing Nie**, Yue Gao.
+- ``NeurIPS 2024`` [Accelerating Monte Carlo Tree Search with Probability Tree State Abstraction](https://arxiv.org/abs/2310.06513), Yangqing Fu, Ming Sun, **Buqing Nie**, Yue Gao.
+- ``RAL 2023`` [DAGA: Dynamics Aware Reinforcement Learning With Graph-Based Rapid Adaptation](https://ieeexplore.ieee.org/document/10054096), Jingtian Ji, **Buqing Nie**, and Yue Gao.
+- ``Under Review`` [General Tree State Abstraction for Efficient Monte Carlo Tree Search with Automatic Optimization](), Yangqing Fu, Ming Sun, **Buqing Nie**, Yue Gao.
 
-## 🤖 Robotics & Embodied Artificial Intelligence
+# 🤖 Robotics & Embodied Artificial Intelligence
 
 <!-- SE-Policy -->
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">Under Review</div><img src='images/SE-Policy.png' alt="sym" width="100%"></div></div>
@@ -119,20 +119,21 @@ Yang Zhang, **Buqing Nie**, and Yue Gao.  [Paper](https://ieeexplore.ieee.org/do
 </div>
 </div>
 
-- ``IROS 2025`` Minimizing Acoustic Noise: Enhancing Quiet Locomotion for Quadruped Robots in Indoor Applications, Zhanxiang Cao, **Buqing Nie**, Yang Zhang, Yue Gao.
-- ``Under Review`` Learning Motion Skills with Adaptive Assistive Curriculum Force in Humanoid Robots. Zhanxiang Cao, Yang Zhang, **Buqing Nie**, Huangxuan Lin, Haoyang Li, Yue Gao.
-- ``Under Review`` Disturbance-Aware Adaptive Compensation in Hybrid Force-Position Locomotion Policy for Legged Robots, Yang Zhang, **Buqing Nie**, Zhanxiang Cao, Yangqing Fu, Yue Gao.
-- ``IJRA 2022`` Capability Iteration Network for Robot Path Planning, **Buqing Nie**, Yidong Mei, Yue Gao, Feng Gao.
-- ``ROBIO 2022`` Structure-Aware Policy to Improve Generalization among Various Robots and Environments, Wei Xu, Yue Gao, **Buqing Nie**.
+- ``IROS 2025`` [Minimizing Acoustic Noise: Enhancing Quiet Locomotion for Quadruped Robots in Indoor Applications](https://arxiv.org/abs/2506.23114), Zhanxiang Cao, **Buqing Nie**, Yang Zhang, Yue Gao.
+- ``Under Review`` [Disturbance-Aware Adaptive Compensation in Hybrid Force-Position Locomotion Policy for Legged Robots](https://arxiv.org/abs/2506.00472), Yang Zhang, **Buqing Nie**, Zhanxiang Cao, Yangqing Fu, Yue Gao.
+- ``Under Review`` [Learning Motion Skills with Adaptive Assistive Curriculum Force in Humanoid Robots](https://arxiv.org/abs/2506.23125). Zhanxiang Cao, Yang Zhang, **Buqing Nie**, Huangxuan Lin, Haoyang Li, Yue Gao.
+- ``Under Review`` [Learning Robust Motion Skills via Critical Adversarial Attacks for Humanoid Robots](https://arxiv.org/abs/2507.08303), Yang Zhang, Zhanxiang Cao, **Buqing Nie**, Haoyang Li, Yue Gao.
+- ``IJRA 2022`` [Capability Iteration Network for Robot Path Planning](https://arxiv.org/abs/2104.14300), **Buqing Nie**, Yidong Mei, Yue Gao, Feng Gao.
+- ``ROBIO 2022`` [Structure-Aware Policy to Improve Generalization among Various Robots and Environments](https://ieeexplore.ieee.org/document/10011945), Wei Xu, Yue Gao, **Buqing Nie**.
 
 # 📖 Educations
 - *2022.04 - 2026.03*, PhD Candidate (combined master and doctoral program), Computer Science, Department of Computer Science, Shanghai Jiao Tong University.
 - *2020.09 - 2022.04*, Master, Control Science and Engineering, Department of Automation, Shanghai Jiao Tong University.
 - *2016.06 - 2020.04*, Bachelor, Computer Science (IEEE honor class), Department of Computer Science, Shanghai Jiao Tong University.
 
-
-# 🎖 Honors and Awards
-- *2021.10* Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet.  
-
 # 💻 Academic Services
 I serve as a reviewer for AI/robotics conferences/journals, including ICLR 2025, NeurIPS 2025, ICRA 2025, IROS 2025, RAL, etc.
+
+# 🎖 Honors and Awards
+- *2021.11* Huawei Scholarship
+- *2019.05* MCM/ICM Meritorious Winner (team leader)
