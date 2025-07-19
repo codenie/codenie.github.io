@@ -9,9 +9,15 @@ main:
   - title: "Educations"
     url: "/#-educations"
 
-  - title: "Academic Services"
+  - title: "Services and Awards"
     url: "/#-academic-services"
 
-  - title: "Honors and Awards"
-    url: "/#-honors-and-awards"
+  # - title: "Academic Services"
+  #   url: "/#-academic-services"
+
+  # - title: "Honors and Awards"
+  #   url: "/#-honors-and-awards"
+
+  - title: "CV"
+    url: "/resources/resume.pdf"
 
