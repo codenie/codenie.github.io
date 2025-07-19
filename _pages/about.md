@@ -53,39 +53,44 @@ I am a final year CS PhD student, expected to graduate in March 2026. Currently,
 Improve robustness of reinforcement learning against observation perturbations via $l_\infty$ lipschitz policy networks
 
 **Buqing Nie**, Jingtian Ji, Yangqing Fu, Yue Gao. [Arxiv](https://arxiv.org/abs/2312.08751)
-</div>
-</div>
-
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Arxiv</div></div></div>
-<div class='paper-box-text' markdown="1"> Action Robust Reinforcement Learning via Optimal Adversary Aware Policy Optimization. **Buqing Nie**, Yangqing Fu, Yue Gao.  [Arxiv](https://arxiv.org/abs/2507.03372)
+- improve certified robustness under observation adversaries.
+- first work to improve robustness using Lipschitz property.
+- improve performance over 20% (30% on strong perturbations).
 </div>
 </div>
 
 
 <!-- OA-RL -->
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">AAAI 2024</div><img src='images/sortRL.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Under Review</div><img src='images/OARL.jpg' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [Action Robust Reinforcement Learning via Optimal Adversary Aware Policy Optimization](https://arxiv.org/abs/2507.03372)
 
 **Buqing Nie**, Yangqing Fu, Yue Gao.  [Arxiv](https://arxiv.org/abs/2507.03372)
+- improve robustn4ss under action adversaries
+- formulate and prove OA-PI framework 
+- training without finding adversaries explicitly
 </div>
 </div>
 
-<div class='paper-box-image'><div><div class="badge">Arxiv</div></div></div>
-<div class='paper-box-text' markdown="1">
+- ``NeurIPS 2024`` Accelerating Monte Carlo Tree Search with Probability Tree State Abstraction, Yangqing Fu, Ming Sun, **Buqing Nie**, Yue Gao.
 
-[Action Robust Reinforcement Learning via Optimal Adversary Aware Policy Optimization](https://arxiv.org/abs/2507.03372), **Buqing Nie**, Yangqing Fu, Yue Gao.  [Arxiv](https://arxiv.org/abs/2507.03372)
-
-</div>
-
-<span class="badge">Arxiv</span> <a href="https://arxiv.org/abs/2507.03372">
-      Action Robust Reinforcement Learning via Optimal Adversary Aware Policy Optimization
-    </a> [Action Robust Reinforcement Learning via Optimal Adversary Aware Policy Optimization](https://arxiv.org/abs/2507.03372), **Buqing Nie**, Yangqing Fu, Yue Gao.  [Arxiv](https://arxiv.org/abs/2507.03372)
-
-- ``Arxiv`` [test](https://arxiv.org/abs/2106.09317), test, test.
 
 ## 🤖 Robotics & Embodied Artificial Intelligence
+
+<!-- SE-Policy -->
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Under Review</div><img src='images/SE-Policy.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+Learning Symmetry Equivariant Deep Reinforcement Learning Policy for Humanoid Robots
+
+**Buqing Nie**, et al. 
+- DRL-based humanoid robot policy with strict symmetry equivariance
+- simple to implement without additional hyper-parameters
+- higher tracking accuracy with coordinated motions
+</div>
+</div>
+
 
 <!-- DanceHAT -->
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICRA 2022</div><img src='images/dancehat.png' alt="sym" width="100%"></div></div>
@@ -94,10 +99,28 @@ Improve robustness of reinforcement learning against observation perturbations v
 DanceHAT: Generate Stable Dances for Humanoid Robots with Adversarial Training
 
 **Buqing Nie**, and Yue Gao.  [Paper](https://ieeexplore.ieee.org/document/9811649/)
+- humanoid robot imitation learning using adversarial training
+- first learning-based IL work for humanoid robot with stability
 </div>
 </div>
 
-- Capability Iteration Network for Robot Path Planning, **Buqing Nie**, Yidong Mei, Yue Gao, Feng Gao.
+<!-- Lipsnet policy -->
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">RAL 2024</div><img src='images/lipsnet_policy.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[Robust Locomotion Policy with Adaptive Lipschitz Constraint for Legged Robots](https://ieeexplore.ieee.org/document/10767293/)
+
+Yang Zhang, **Buqing Nie**, and Yue Gao.  [Paper](https://ieeexplore.ieee.org/document/10767293/)
+- 
+- higher smoothness, lower energy cost, robust to observation noise and disturbances.
+</div>
+</div>
+
+- ``IROS 2025`` Minimizing Acoustic Noise: Enhancing Quiet Locomotion for Quadruped Robots in Indoor Applications, Zhanxiang Cao, **Buqing Nie**, Yang Zhang, Yue Gao.
+- ``Under Review`` Learning Motion Skills with Adaptive Assistive Curriculum Force in Humanoid Robots. Zhanxiang Cao, Yang Zhang, **Buqing Nie**, Huangxuan Lin, Haoyang Li, Yue Gao.
+- ``Under Review`` Disturbance-Aware Adaptive Compensation in Hybrid Force-Position Locomotion Policy for Legged Robots, Yang Zhang, **Buqing Nie**, Zhanxiang Cao, Yangqing Fu, Yue Gao.
+- ``IJRA 2022`` Capability Iteration Network for Robot Path Planning, **Buqing Nie**, Yidong Mei, Yue Gao, Feng Gao.
+- ``ROBIO 2022`` Structure-Aware Policy to Improve Generalization among Various Robots and Environments, Wei Xu, Yue Gao, **Buqing Nie**.
 
 # 📖 Educations
 - *2022.04 - 2026.03*, PhD Candidate (combined master and doctoral program), Computer Science, Department of Computer Science, Shanghai Jiao Tong University.
