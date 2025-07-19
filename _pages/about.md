@@ -67,14 +67,15 @@ Improve robustness of reinforcement learning against observation perturbations v
 [Action Robust Reinforcement Learning via Optimal Adversary Aware Policy Optimization](https://arxiv.org/abs/2507.03372)
 
 **Buqing Nie**, Yangqing Fu, Yue Gao.  [Arxiv](https://arxiv.org/abs/2507.03372)
-- improve robustn4ss under action adversaries
-- formulate and prove OA-PI framework 
-- training without finding adversaries explicitly
+- improve robustness under various action adversaries.
+- formulate and prove OA-PI framework theoretically.
+- training without finding adversaries explicitly.
 </div>
 </div>
 
 - ``NeurIPS 2024`` Accelerating Monte Carlo Tree Search with Probability Tree State Abstraction, Yangqing Fu, Ming Sun, **Buqing Nie**, Yue Gao.
-
+- ``RAL 2023`` DAGA: Dynamics Aware Reinforcement Learning With Graph-Based Rapid Adaptation, Jingtian Ji, **Buqing Nie**, and Yue Gao.
+- ``Under Review`` General Tree State Abstraction for Efficient Monte Carlo Tree Search with Automatic Optimization, Yangqing Fu, Ming Sun, **Buqing Nie**, Yue Gao.
 
 ## 🤖 Robotics & Embodied Artificial Intelligence
 
@@ -85,8 +86,8 @@ Improve robustness of reinforcement learning against observation perturbations v
 Learning Symmetry Equivariant Deep Reinforcement Learning Policy for Humanoid Robots
 
 **Buqing Nie**, et al. 
-- DRL-based humanoid robot policy with strict symmetry equivariance
-- simple to implement without additional hyper-parameters
+- DRL-based humanoid robot policy with strict symmetry equivariance.
+- simple to implement without additional hyper-parameters.
 - higher tracking accuracy with coordinated motions
 </div>
 </div>
@@ -99,8 +100,8 @@ Learning Symmetry Equivariant Deep Reinforcement Learning Policy for Humanoid Ro
 DanceHAT: Generate Stable Dances for Humanoid Robots with Adversarial Training
 
 **Buqing Nie**, and Yue Gao.  [Paper](https://ieeexplore.ieee.org/document/9811649/)
-- humanoid robot imitation learning using adversarial training
-- first learning-based IL work for humanoid robot with stability
+- humanoid robot imitation learning using adversarial training.
+- first learning-based IL work for humanoid robot with stability.
 </div>
 </div>
 
@@ -111,8 +112,10 @@ DanceHAT: Generate Stable Dances for Humanoid Robots with Adversarial Training
 [Robust Locomotion Policy with Adaptive Lipschitz Constraint for Legged Robots](https://ieeexplore.ieee.org/document/10767293/)
 
 Yang Zhang, **Buqing Nie**, and Yue Gao.  [Paper](https://ieeexplore.ieee.org/document/10767293/)
-- 
-- higher smoothness, lower energy cost, robust to observation noise and disturbances.
+- induce adaptive Lipschitz constraint for quadruped locomotion tasks
+- action smooth, lower energy cost, robust to obs. noise and disturbances.
+<!-- - easy to imeplement, higher performance & action smoothness, lower energy cost
+- robust to observation noise and external disturbances. -->
 </div>
 </div>
 
