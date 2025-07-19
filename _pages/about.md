@@ -83,7 +83,7 @@ Improve robustness of reinforcement learning against observation perturbations v
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">Under Review</div><img src='images/SE-Policy.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-Learning Symmetry Equivariant Deep Reinforcement Learning Policy for Humanoid Robots
+Symmetry Equivariant Deep Reinforcement Learning Policy for Humanoid Robots
 
 **Buqing Nie**, et al. 
 - DRL-based humanoid robot policy with strict symmetry equivariance.
