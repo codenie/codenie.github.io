@@ -114,8 +114,6 @@ DanceHAT: Generate Stable Dances for Humanoid Robots with Adversarial Training
 Yang Zhang, **Buqing Nie**, and Yue Gao.  [Paper](https://ieeexplore.ieee.org/document/10767293/)
 - induce adaptive Lipschitz constraint for quadruped locomotion tasks
 - action smooth, lower energy cost, robust to obs. noise and disturbances.
-<!-- - easy to imeplement, higher performance & action smoothness, lower energy cost
-- robust to observation noise and external disturbances. -->
 </div>
 </div>
 
