@@ -50,7 +50,7 @@ I am a final year CS PhD student, expected to graduate in March 2026. Currently,
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">AAAI 2024</div><img src='images/sortRL.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-Improve robustness of reinforcement learning against observation perturbations via $l_\infty$ lipschitz policy networks
+[Improve robustness of reinforcement learning against observation perturbations via $l_\infty$ lipschitz policy networks](https://arxiv.org/abs/2312.08751)
 
 **Buqing Nie**, Jingtian Ji, Yangqing Fu, Yue Gao. [Arxiv](https://arxiv.org/abs/2312.08751)
 - improve certified robustness under observation adversaries.
@@ -80,10 +80,10 @@ Improve robustness of reinforcement learning against observation perturbations v
 # 🤖 Robotics & Embodied Artificial Intelligence
 
 <!-- SE-Policy -->
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Under Review</div><img src='images/SE-Policy.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Arxiv</div><img src='images/SE-Policy.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-Symmetry Equivariant Deep Reinforcement Learning Policy for Humanoid Robots
+[Symmetry Equivariant Deep Reinforcement Learning Policy for Humanoid Robots]()
 
 **Buqing Nie**, et al. 
 - DRL-based humanoid robot policy with strict symmetry equivariance.
@@ -97,7 +97,7 @@ Symmetry Equivariant Deep Reinforcement Learning Policy for Humanoid Robots
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICRA 2022</div><img src='images/dancehat.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-DanceHAT: Generate Stable Dances for Humanoid Robots with Adversarial Training
+[DanceHAT: Generate Stable Dances for Humanoid Robots with Adversarial Training](https://ieeexplore.ieee.org/document/9811649/)
 
 **Buqing Nie**, and Yue Gao.  [Paper](https://ieeexplore.ieee.org/document/9811649/)
 - humanoid robot imitation learning using adversarial training.
