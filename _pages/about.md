@@ -130,6 +130,7 @@ Yang Zhang, **Buqing Nie**, and Yue Gao.  [Paper](https://ieeexplore.ieee.org/do
 - *2016.06 - 2020.04*, Bachelor, Computer Science (IEEE honor class), Department of Computer Science, Shanghai Jiao Tong University.
 
 # 💻 Academic Services
+<span class='anchor' id='academic-services'></span>
 I serve as a reviewer for AI/robotics conferences/journals, including ICLR 2025, NeurIPS 2025, ICRA 2025, IROS 2025, RAL, etc.
 
 # 🎖 Honors and Awards
