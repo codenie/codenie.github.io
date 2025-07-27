@@ -131,7 +131,7 @@ Yang Zhang, **Buqing Nie**, and Yue Gao.  [Paper](https://ieeexplore.ieee.org/do
 
 # 💻 Academic Services
 <span class='anchor' id='academic-services'></span>
-I serve as a reviewer for AI/robotics conferences/journals, including ICLR 2025, NeurIPS 2025, ICRA 2025, IROS 2025, RAL, etc.
+I serve as a reviewer for AI/robotics conferences/journals, including ICLR 2025, NeurIPS 2025, AAAI 2025-2026, ICRA 2025, IROS 2025, RAL 2024-2025, etc.
 
 # 🎖 Honors and Awards
 - *2021.11* Huawei Scholarship
