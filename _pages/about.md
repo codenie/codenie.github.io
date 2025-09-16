@@ -25,7 +25,7 @@ My research interest includes:
 
 (1) **Reinforcement Learning (RL) algorithms:** Robust RL algorithms; Improve sample efficiency; Multi-task/Meta RL algorithms.
 
-(2) **Embodied Artificial Intelligence:** Vision-Language-Action (VLA)-based robto manipulation; RL-based locomotion and imitation on legged/humanoid robots; 
+(2) **Embodied Artificial Intelligence:** Vision-Language-Action (VLA)-based robot manipulation; RL-based locomotion and imitation on legged/humanoid robots; 
 
 I am a final year CS PhD student, expected to graduate in March 2026. Currently, I am looking for a job about Reinforcement Learning or Embodied AI.
 
